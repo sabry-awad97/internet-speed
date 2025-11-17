@@ -28,7 +28,7 @@ struct Args {
     upload_mb: u32,
 }
 
-#[tokio::main(flavor = "multi_thread", worker_threads = 4)]
+#[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let args = Args::parse();
 
